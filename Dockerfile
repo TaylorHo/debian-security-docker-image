@@ -11,7 +11,7 @@ RUN cd /home/ && git clone --depth=1 https://github.com/ffuf/ffuf && cd ffuf && 
 
 RUN gem install wpscan && \
     echo "alias dirsearch=\"python3 /home/dirsearch/dirsearch.py\"" >> /root/.bashrc && \
-    echo "alias sublist3r=\"python3 /home/dirsearch/sublist3r.py\"" >> /root/.bashrc && \
-    echo "alias sublister=\"python3 /home/dirsearch/sublist3r.py\"" >> /root/.bashrc
+    echo "alias sublist3r=\"python3 /home/Sublist3r/sublist3r.py\"" >> /root/.bashrc && \
+    echo "alias sublister=\"python3 /home/Sublist3r/sublist3r.py\"" >> /root/.bashrc
 
 ENTRYPOINT [ "/bin/bash" ]
